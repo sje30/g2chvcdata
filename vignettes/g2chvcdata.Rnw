@@ -1,0 +1,52 @@
+%\VignetteIndexEntry{g2chvcmea}
+%\VignetteKeywords{MEA}
+%\VignettePackage{g2chvcmea}
+%\VignetteEngine{knitr::knitr}
+\documentclass{article}
+\usepackage{mathpazo,setspace}
+\renewcommand{\sfdefault}{lmss}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=2cm,right=4cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\onehalfspacing
+\title{An introduction to the g2chvcdata package}
+
+\author{S. J. Eglen}
+\date{\today}
+
+\maketitle
+
+\section*{About this package}
+
+This vignette documents the package containing the hdf5 files for the
+``hippocampus vs cortex'' study as part of the Genes to Cognition
+project.  We load the package and then report some simple properties
+about the data.
+
+\section*{Load the package and find the files}
+
+The package has a simple R function to report where the hdf5 files are
+stored.  We can then examine all the hdf5 files in this directory.
+
+<<find-files>>=
+require(g2chvcdata)
+h5.dir <- g2chvcdatadir()
+h5.files <- list.files(path=h5.dir, pattern='.h5',
+                       full.names=TRUE, recursive=TRUE)
+length(h5.files)
+@  
+
+
+\subsection*{Compiling this document}
+
+<<eval=FALSE,include=TRUE>>=
+require(knitr); knit2pdf('g2chvcdata.Rnw')
+@
+
+
+
+
+\end{document}
