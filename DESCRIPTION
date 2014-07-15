@@ -1,0 +1,9 @@
+Package: g2chvcdata
+Type: Package
+Title: Data files for the Genes to Cognition Hippocampus vs Cortex project
+Version: 0.1
+Date: 2014-07-15
+Author: Stephen J. Eglen
+Maintainer: <sje30@cam.ac.uk>
+Description: These are the hdf5 data files.
+License: GPL (>= 2)
