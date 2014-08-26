@@ -1,1 +1,7 @@
 citHeader("Paper forthcoming")
+citEntry(entry="Article",
+         title="Genes to Cognition",
+         author="Stephen J Eglen"
+)
+
+         
