@@ -21,7 +21,7 @@ License: \tab What license is it under?\cr
 Stephen Eglen
 }
 \references{
-Forthcomng manuscript.
+Forthcoming manuscript.
 }
 \keyword{ package }
 
