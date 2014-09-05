@@ -11,6 +11,11 @@ first line if you already have it installed:
 	install.packages("devtools")
 	devtools::install_github("sje30/g2chvcdata")
 
+This can take a long time (at least a minute) even, on fast
+connections.  On some connections (e.g. home broadband) the install
+from github can take a long time.  In which case, you can install it
+from zenodo.org or figshare.org **instructions to follow**.
+
 # Downloading the data
 
 If you just wish to use the data files, but not the R package, either
